@@ -6,7 +6,7 @@
 .container {
   text-align: center;
   background: #eab000;
-  margin: 70px;
+  margin: 70px 0 10px;
   box-shadow: 10px 10px rgb(65 50 100 / 8%);
   font-family: "Port Lligat Sans", sans-serif;
   border-radius: 20px 35%;
@@ -92,10 +92,11 @@ button:hover {
 
 .cally {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   font-size: 18px;
   font-family: monospace;
   color: white;
+  margin-left: 170px;
 }
 .app {
   position: fixed;
