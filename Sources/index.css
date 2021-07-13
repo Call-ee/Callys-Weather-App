@@ -9,7 +9,7 @@
   margin: 70px 0 10px;
   box-shadow: 10px 10px rgb(65 50 100 / 8%);
   font-family: "Port Lligat Sans", sans-serif;
-  border-radius: 40px 50%;
+  border-radius: 30px 50%;
 }
 
 .row {
@@ -41,14 +41,14 @@
 }
 .emoji {
   position: relative;
-  top: 60px;
-  right: 100px;
+  top: 35px;
+  right: 90px;
   font-size: 80px;
 }
 .weatherD {
   position: relative;
-  bottom: 60px;
-  right: 150px;
+  bottom: 83px;
+  right: 170px;
   font-size: 19px;
   font-style: italic;
   color: #e24e43;
