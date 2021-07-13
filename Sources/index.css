@@ -95,7 +95,7 @@ button:hover {
 
 .cally {
   text-align: center;
-  padding: 20px 0 30px;
+  padding-bottom: 30px;
   font-size: 20px;
   font-family: monospace;
   color: white;
@@ -172,4 +172,11 @@ span {
 }
 .wind {
   font-size: 18px;
+}
+.git {
+  text-decoration: none;
+  color: white;
+}
+.git:hover {
+  color: purple;
 }
