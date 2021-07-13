@@ -9,7 +9,7 @@
   margin: 70px;
   box-shadow: 10px 10px rgb(65 50 100 / 8%);
   font-family: "Port Lligat Sans", sans-serif;
-  border-radius: 45px 30%;
+  border-radius: 20px 35%;
 }
 
 .row {
@@ -27,18 +27,17 @@
 }
 
 .title {
-  font-size: 40px;
-  padding: 10px 0 8px;
+  margin-right: 130px;
+  font-size: 45px;
+  padding: 50px 0 8px;
   color: #e24e43;
   text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.164);
 }
 
-.day {
-  font-size: 23px;
-  padding-top: 50px;
-}
 .time {
-  font-size: 20px;
+  font-size: 23px;
+  margin-bottom: 20px;
+  margin-right: 130px;
 }
 .emoji {
   position: relative;
@@ -70,9 +69,9 @@
 }
 button {
   position: relative;
-  bottom: 51px;
-  padding: 4.5px;
-  left: 26px;
+  bottom: 79px;
+  padding: 4.5px 9px;
+  left: 261px;
   background: #11c7d4c9;
 }
 button:hover {
@@ -80,11 +79,9 @@ button:hover {
 }
 .search {
   position: relative;
-  top: 6px;
-  right: 20px;
+  left: 195px;
+  bottom: 42px;
   padding: 3px;
-  bottom: 55px;
-  margin-bottom: 20px;
   font-size: 18px;
   background: #11c7d4c9;
   font-family: "Port Lligat Sans", sans-serif;
@@ -96,7 +93,7 @@ button:hover {
 .cally {
   text-align: center;
   padding-bottom: 30px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: monospace;
   color: white;
 }
@@ -175,8 +172,13 @@ span {
 }
 .git {
   text-decoration: none;
-  color: white;
+  color: purple;
 }
 .git:hover {
-  color: purple;
+  color: white;
+}
+
+#search-form {
+  display: block;
+  margin-left: 40px;
 }

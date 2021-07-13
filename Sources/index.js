@@ -25,11 +25,8 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-let currentDayAndMonth = document.querySelector(".day");
-currentDayAndMonth.innerHTML = `${month} ${date}, ${day}`;
-
 let currentTime = document.querySelector(".time");
-currentTime.innerHTML = `${hours}:${minutes}`;
+currentTime.innerHTML = `${month} ${date}, ${day} | Time: ${hours}:${minutes}`;
 
 // Search Engine //
 
