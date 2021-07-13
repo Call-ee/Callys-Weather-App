@@ -70,11 +70,17 @@ function showTemperature(response) {
   let description = document.querySelector(".weatherD");
   let windSpeed = document.querySelector(".wind");
   let humidity = document.querySelector(".pre");
+  let iconElement = document.querySelector("icon");
+
   cityName.innerHTML = `${response.data.name}`;
   temperatureElement.innerHTML = `${temperature}`;
   description.innerHTML = `${response.data.weather[0].description}!`;
   windSpeed.innerHTML = `Wind: ${response.data.wind.speed}m/s`;
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showPosition(position) {
