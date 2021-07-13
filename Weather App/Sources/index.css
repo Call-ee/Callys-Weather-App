@@ -1,0 +1,174 @@
+.body {
+  display: block;
+  margin: 0 310px;
+  background: #e86f7d;
+}
+.container {
+  text-align: center;
+  background: #eab000;
+  margin: 70px;
+  box-shadow: 10px 10px rgb(65 50 100 / 8%);
+  font-family: "Port Lligat Sans", sans-serif;
+  border-radius: 45px 30%;
+}
+
+.row {
+  position: relative;
+  bottom: 50px;
+}
+
+.col-1 {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+  left: 35px;
+  font-size: 20px;
+  color: purple;
+}
+
+.title {
+  font-size: 40px;
+  padding: 10px 0 8px;
+  color: #e24e43;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.164);
+}
+
+.day {
+  font-size: 23px;
+  padding-top: 50px;
+}
+.time {
+  font-size: 20px;
+}
+.emoji {
+  position: relative;
+  top: 60px;
+  right: 100px;
+  font-size: 80px;
+}
+.weatherD {
+  position: relative;
+  bottom: 60px;
+  right: 150px;
+  font-size: 19px;
+  font-style: italic;
+}
+.temperature {
+  position: relative;
+  left: 50px;
+  bottom: 70px;
+  font-size: 55px;
+}
+.rain {
+  position: relative;
+  font-size: 18px;
+  text-align: left;
+  left: 240px;
+  top: 5px;
+  padding: none;
+}
+button {
+  position: relative;
+  bottom: 51px;
+  padding: 4.5px;
+  left: 26px;
+  background: #11c7d4c9;
+}
+button:hover {
+  background: #12dcebb4;
+}
+.search {
+  position: relative;
+  top: 6px;
+  right: 20px;
+  padding: 3px;
+  bottom: 55px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background: #11c7d4c9;
+  font-family: "Port Lligat Sans", sans-serif;
+}
+.search:hover {
+  background: #12dcebb4;
+}
+
+.cally {
+  text-align: center;
+  padding: 20px 0 30px;
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+}
+.app {
+  position: fixed;
+  top: 15px;
+  left: 30px;
+  font-size: 23px;
+  font-family: monospace;
+  color: white;
+}
+
+span {
+  font-size: 22px;
+
+  position: relative;
+  bottom: 22px;
+  right: 10px;
+  left: 3px;
+}
+#city {
+  display: block;
+  margin: 0 auto 5px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  font-family: monospace;
+  background: whitesmoke;
+  color: purple;
+}
+
+#celsius {
+  font-size: 22px;
+  color: #e24e43;
+  position: relative;
+  bottom: 45px;
+  left: 25px;
+  text-decoration: none;
+}
+#celsius:hover {
+  font-weight: bold;
+  color: #e24e43;
+}
+#fahrenheit {
+  font-size: 22px;
+  color: #e24e43;
+  position: relative;
+  bottom: 45px;
+  left: 25px;
+  text-decoration: none;
+}
+#fahrenheit:hover {
+  font-weight: bold;
+  color: #e24e43;
+}
+.line {
+  left: 25px;
+  bottom: 45px;
+  color: #018f98;
+}
+
+.tNumber {
+  position: absolute;
+  right: 80px;
+  bottom: 62px;
+  font-size: 60px;
+  color: #018f98;
+}
+
+.pre {
+  font-size: 18px;
+}
+.wind {
+  font-size: 18px;
+}
