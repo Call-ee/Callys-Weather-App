@@ -44,26 +44,28 @@ function search(event) {
   }
 }
 
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", search);
+// Temperature Conversion //
 
 function convertC(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let tempInput = document.querySelector(".tNumber");
-  tempInput.innerHTML = 17;
+  tempInput.innerHTML = Math.round(celsiusTemperature);
 }
 function convertF(event) {
   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let tempInput = document.querySelector(".tNumber");
-  tempInput.innerHTML = 79;
+  tempInput.innerHTML = Math.round(fahrenheitTemperature);
 }
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", convertC);
 
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", convertF);
+// Get weather API data //
 
 function showTemperature(response) {
+  console.log(response.data);
   let cityName = document.querySelector(".title");
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector(".tNumber");
@@ -71,6 +73,9 @@ function showTemperature(response) {
   let windSpeed = document.querySelector(".wind");
   let humidity = document.querySelector(".pre");
   let iconElement = document.querySelector("#icon");
+
+  celsiusTemperature = response.data.main.temp;
+
   cityName.innerHTML = `${response.data.name}`;
   temperatureElement.innerHTML = `${temperature}`;
   description.innerHTML = `${response.data.weather[0].description}!`;
@@ -93,6 +98,17 @@ function showPosition(position) {
 function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", convertC);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", convertF);
+
+let celsiusTemperature = null;
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
 
 let button = document.querySelector("button");
 button.addEventListener("click", getCurrentPosition);

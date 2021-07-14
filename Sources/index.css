@@ -247,3 +247,6 @@ img:hover {
   bottom: 250px;
   right: 200px;
 }
+.active {
+  font-weight: bold;
+}
