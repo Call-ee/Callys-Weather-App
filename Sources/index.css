@@ -36,13 +36,14 @@
 }
 
 .time {
+  color: purple;
   font-size: 23px;
   margin-bottom: 20px;
   margin-right: 215px;
 }
 #icon {
   display: block;
-  margin-left: 140px;
+  margin-left: 135px;
   width: 150px;
 }
 .weatherD {
@@ -71,8 +72,9 @@ button {
   position: relative;
   bottom: 138.5px;
   padding: 4.5px 9px;
-  left: 261px;
+  left: 260.5px;
   background: #11c7d4c9;
+  border: solid 2px black;
 }
 button:hover {
   background: #12dcebb4;
@@ -85,6 +87,7 @@ button:hover {
   font-size: 18px;
   background: #11c7d4c9;
   font-family: "Port Lligat Sans", sans-serif;
+  border: solid 2px black;
 }
 .search:hover {
   background: #12dcebb4;
@@ -93,7 +96,7 @@ button:hover {
 .cally {
   text-align: center;
   padding-bottom: 70px;
-  font-size: 17px;
+  font-size: 16px;
   font-family: monospace;
   color: white;
   margin-left: 330px;
