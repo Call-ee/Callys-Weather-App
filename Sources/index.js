@@ -70,8 +70,7 @@ function showTemperature(response) {
   let description = document.querySelector(".weatherD");
   let windSpeed = document.querySelector(".wind");
   let humidity = document.querySelector(".pre");
-  let iconElement = document.querySelector("icon");
-
+  let iconElement = document.querySelector("#icon");
   cityName.innerHTML = `${response.data.name}`;
   temperatureElement.innerHTML = `${temperature}`;
   description.innerHTML = `${response.data.weather[0].description}!`;

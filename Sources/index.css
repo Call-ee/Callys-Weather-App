@@ -9,13 +9,13 @@
   margin: 70px 0 10px;
   box-shadow: 10px 10px rgb(65 50 100 / 8%);
   font-family: "Port Lligat Sans", sans-serif;
-  border-radius: 30px 50%;
+  border-radius: 30px 60%;
   border: solid 3px black;
 }
 
 .row {
   position: relative;
-  bottom: 50px;
+  bottom: 118px;
 }
 
 .col-1 {
@@ -28,7 +28,7 @@
 }
 
 .title {
-  margin-right: 155px;
+  margin-right: 225px;
   font-size: 45px;
   padding: 30px 0 8px;
   color: #e24e43;
@@ -38,18 +38,17 @@
 .time {
   font-size: 23px;
   margin-bottom: 20px;
-  margin-right: 155px;
+  margin-right: 215px;
 }
 #icon {
-  position: relative;
-  top: 35px;
-  right: 90px;
-  width: 100px;
+  display: block;
+  margin-left: 140px;
+  width: 150px;
 }
 .weatherD {
   position: relative;
-  bottom: 83px;
-  right: 170px;
+  bottom: 130px;
+  right: 163px;
   font-size: 19px;
   font-style: italic;
   color: #e24e43;
@@ -65,12 +64,12 @@
   font-size: 18px;
   text-align: left;
   left: 240px;
-  top: 5px;
+  bottom: 60px;
   padding: none;
 }
 button {
   position: relative;
-  bottom: 78.5px;
+  bottom: 138.5px;
   padding: 4.5px 9px;
   left: 261px;
   background: #11c7d4c9;
@@ -94,10 +93,10 @@ button:hover {
 .cally {
   text-align: center;
   padding-bottom: 70px;
-  font-size: 18px;
+  font-size: 17px;
   font-family: monospace;
   color: white;
-  margin-left: 250px;
+  margin-left: 330px;
 }
 .app {
   position: fixed;
@@ -132,7 +131,7 @@ span {
   font-size: 22px;
   color: #e24e43;
   position: relative;
-  bottom: 45px;
+  bottom: 105px;
   left: 25px;
   text-decoration: none;
 }
@@ -144,7 +143,7 @@ span {
   font-size: 22px;
   color: #e24e43;
   position: relative;
-  bottom: 45px;
+  bottom: 105px;
   left: 25px;
   text-decoration: none;
 }
@@ -154,14 +153,14 @@ span {
 }
 .line {
   left: 25px;
-  bottom: 45px;
+  bottom: 105px;
   color: #018f98;
 }
 
 .tNumber {
   position: absolute;
   right: 80px;
-  bottom: 62px;
+  bottom: 120px;
   font-size: 60px;
   color: #018f98;
 }
@@ -181,6 +180,67 @@ span {
 }
 
 #search-form {
-  display: block;
-  margin-left: 40px;
+  position: relative;
+  bottom: 60px;
+  left: 20px;
+}
+.social {
+  list-style: none;
+  position: relative;
+  left: 340px;
+  bottom: 205px;
+}
+.links {
+  display: inline;
+  padding: 0 8px;
+}
+img:hover {
+  width: 60px;
+  transition: 100ms ease-in-out;
+}
+.lemon {
+  font-size: 50px;
+  opacity: 60%;
+}
+
+#L1 {
+  position: absolute;
+  bottom: 230px;
+  left: 160px;
+}
+#L2 {
+  position: absolute;
+  bottom: 400px;
+  left: 60px;
+}
+#L3 {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+}
+#L4 {
+  position: absolute;
+  top: 630px;
+  left: 270px;
+}
+
+#L5 {
+  position: absolute;
+  bottom: 430px;
+  right: 70px;
+}
+#L6 {
+  position: absolute;
+  bottom: 50px;
+  right: 90px;
+}
+#L7 {
+  position: absolute;
+  top: 650px;
+  right: 180px;
+}
+#L8 {
+  position: absolute;
+  bottom: 250px;
+  right: 200px;
 }
