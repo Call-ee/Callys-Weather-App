@@ -114,3 +114,7 @@ form.addEventListener("submit", search);
 
 let button = document.querySelector("button");
 button.addEventListener("click", getCurrentPosition);
+
+let currentUrl =
+  "https://api.openweathermap.org/data/2.5/weather?q=Philadelphia&units=metric&appid=1a1c85ee290054195972d7e505026c70";
+axios(`${currentUrl}`).then(showTemperature);
