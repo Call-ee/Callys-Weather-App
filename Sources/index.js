@@ -47,9 +47,10 @@ function displayForecast() {
               id="days"
               width="70"
             />
+            ${day}
             80°
             <div class="min">40°</div>
-            ${day}
+            
           </div>
           `;
   });
