@@ -11,6 +11,7 @@
   font-family: "Port Lligat Sans", sans-serif;
   border-radius: 40px 60%;
   border: solid 3px black;
+  padding-bottom: 60px;
 }
 
 .row {
@@ -23,7 +24,7 @@
   margin-left: 30px;
   margin-right: 30px;
   left: 45px;
-  font-size: 18px;
+  font-size: 17px;
   color: purple;
   text-align: center;
 }
@@ -71,9 +72,9 @@
 }
 button {
   position: absolute;
-  top: 582px;
-  padding: 4.2px 9px;
-  left: 874.5px;
+  top: 570.5px;
+  padding: 4.4px 9px;
+  left: 867.5px;
   background: #11c7d4c9;
   border: solid 2px black;
 }
@@ -81,9 +82,9 @@ button:hover {
   background: #12dcebb4;
 }
 .search {
-  position: relative;
-  left: 195px;
-  bottom: 42px;
+  position: absolute;
+  left: 328px;
+  bottom: 6px;
   padding: 3px;
   font-size: 18px;
   background: #11c7d4c9;
@@ -184,9 +185,9 @@ span {
 }
 
 #search-form {
-  position: relative;
-  bottom: 85px;
-  left: 20px;
+  position: absolute;
+  top: 570px;
+  left: 482px;
 }
 .social {
   list-style: none;

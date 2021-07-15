@@ -30,6 +30,34 @@ if (minutes < 10) {
 let currentTime = document.querySelector(".time");
 currentTime.innerHTML = `${month} ${date}, ${day} | Time: ${hours}:${minutes} ${AmOrPm}`;
 
+// full week forecast //
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col-1">
+            <img
+              src="http://openweathermap.org/img/wn/02d@2x.png"
+              id="days"
+              width="70"
+            />
+            80°
+            <div class="min">40°</div>
+            ${day}
+          </div>
+          `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 // Search Engine //
 
 function search(event) {
@@ -76,6 +104,7 @@ function showTemperature(response) {
   let humidity = document.querySelector(".pre");
   let iconElement = document.querySelector("#icon");
 
+  displayForecast();
   celsiusTemperature = response.data.main.temp;
 
   cityName.innerHTML = `${response.data.name}`;
