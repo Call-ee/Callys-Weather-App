@@ -27,6 +27,7 @@
   left: 35px;
   font-size: 17px;
   text-align: center;
+  color: purple;
 }
 
 .title {
@@ -261,7 +262,7 @@ span {
 
 .min {
   font-size: 15px;
-  color: rgba(41, 40, 40, 0.842);
+  color: purple;
 }
 
 #days {
