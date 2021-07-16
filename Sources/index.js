@@ -127,7 +127,7 @@ function showTemperature(response) {
   cityName.innerHTML = `${response.data.name}`;
   temperatureElement.innerHTML = `${temperature}`;
   description.innerHTML = `${response.data.weather[0].description}!`;
-  windSpeed.innerHTML = `Wind: ${response.data.wind.speed}m/s`;
+  windSpeed.innerHTML = `Wind: ${response.data.wind.speed}m/h`;
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   iconElement.setAttribute(
     "src",
