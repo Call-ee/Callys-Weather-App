@@ -1,281 +1,53 @@
-.body {
-  position: absolute;
-  left: 180px;
-  background: #e86f7d;
-  padding: 0 165px;
+html {
+  width: 100%;
+  margin-top: 60px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
-.container {
-  position: absolute;
-  background: #eab000;
-  margin: 60px 0px;
-  box-shadow: -15px 11px rgb(65 50 100 / 8%);
-  font-family: "Port Lligat Sans", sans-serif;
-  border-radius: 50px 60%;
-  border: solid 3px black;
+body {
+  width: 50%;
+  margin: auto;
+}
+
+.bg-color {
+  background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  border-radius: 20px;
 }
 
 .row {
-  position: relative;
-  bottom: 175px;
-}
-
-.col-1 {
-  position: relative;
-  margin-left: 30px;
-  margin-right: 30px;
-  left: 35px;
-  font-size: 17px;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  color: purple;
 }
 
-.title {
-  position: relative;
-  left: 50px;
-  font-size: 45px;
-  padding: 30px 0 8px;
-  color: #e24e43;
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.164);
-}
-
-.time {
-  position: relative;
-  left: 50px;
-  color: purple;
-  font-size: 23px;
-  margin-bottom: 20px;
-  margin-right: 215px;
-}
 #icon {
-  position: relative;
-  left: 110px;
-  bottom: 15px;
-  width: 150px;
+  width: 30%;
 }
-.weatherD {
-  position: relative;
-  bottom: 140px;
-  left: 58px;
-  font-size: 19px;
-  font-style: italic;
-  color: #e24e43;
+
+.show-weather {
+  text-align: right;
 }
-.temperature {
-  position: relative;
-  left: 50px;
-  bottom: 70px;
-  font-size: 55px;
-}
-.rain {
-  position: relative;
-  font-size: 18px;
+
+.show-weather2 {
   text-align: left;
-  left: 205px;
-  bottom: 87px;
-  padding: none;
-}
-button {
-  position: absolute;
-  top: 520.5px;
-  padding: 4.4px 9px;
-  left: 680px;
-  background: #11c7d4c9;
-  border: solid 2px black;
-}
-button:hover {
-  background: #12dcebb4;
-}
-.search {
-  position: absolute;
-  left: 328px;
-  bottom: 6px;
-  padding: 3px;
-  font-size: 18px;
-  background: #11c7d4c9;
-  font-family: "Port Lligat Sans", sans-serif;
-  border: solid 2px black;
-}
-.search:hover {
-  background: #12dcebb4;
+  padding-top: 15px;
 }
 
-.cally {
-  position: relative;
-  top: 667px;
-  left: 290px;
-  padding-bottom: 80px;
-  font-size: 15px;
-  font-family: monospace;
-  color: white;
-}
-.app {
-  position: fixed;
-  top: 15px;
-  left: 30px;
-  font-size: 23px;
-  font-family: monospace;
-  color: white;
-}
-
-span {
-  font-size: 22px;
-
-  position: relative;
-  bottom: 22px;
-  right: 10px;
-  left: 3px;
-}
 #city {
-  display: block;
-  margin: 0 auto 5px;
-  border-radius: 20px;
   text-align: center;
-  padding: 5px;
-  font-size: 16px;
-  font-family: monospace;
-  background: whitesmoke;
-  color: purple;
 }
 
-#celsius {
-  font-size: 22px;
-  color: #e24e43;
-  position: relative;
-  bottom: 125px;
-  left: 200px;
-  text-decoration: none;
-}
-#celsius:hover {
-  font-weight: bold;
-  color: #e24e43;
-}
-#fahrenheit {
-  font-size: 22px;
-  color: #e24e43;
-  position: relative;
-  bottom: 125px;
-  left: 200px;
-  text-decoration: none;
-}
-#fahrenheit:hover {
-  font-weight: bold;
-  color: #e24e43;
-}
-.line {
-  bottom: 125px;
-  left: 200px;
-  color: #018f98;
-}
-
-.tNumber {
-  position: relative;
-  left: 205px;
-  bottom: 100px;
-  font-size: 60px;
-  color: #018f98;
-}
-
-.pre {
-  font-size: 18px;
-}
-.wind {
-  font-size: 18px;
-}
-.git {
-  text-decoration: none;
-  color: purple;
-}
-.git:hover {
-  color: white;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍋</text></svg>")
-      16 0,
-    auto;
+#forecast {
+  margin-bottom: 26px;
 }
 
 #search-form {
-  position: absolute;
-  top: 520px;
-  left: 295px;
-}
-.social {
-  list-style: none;
-  position: relative;
-  left: 300px;
-  bottom: 115px;
-}
-.links {
-  display: inline;
-  padding: 0 8px;
-}
-.socials:hover {
-  width: 50px;
-  transition: 200ms ease-in-out;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍋</text></svg>")
-      16 0,
-    auto;
-}
-.lemon {
-  font-size: 50px;
-  opacity: 60%;
+  margin-bottom: 10px;
 }
 
-.active {
-  font-weight: bold;
-}
-
-.min {
-  font-size: 15px;
-  color: purple;
-}
-
-#days {
-  position: relative;
-  right: 20px;
-}
-
-#cursor {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍋</text></svg>")
-      16 0,
-    auto;
-}
-
-#L1 {
-  position: relative;
-  right: 80px;
-  bottom: 90px;
-}
-#L2 {
-  position: relative;
-  right: 250px;
-  top: 70px;
-}
-#L3 {
-  position: relative;
-  right: 100px;
-  top: 200px;
-}
-#L4 {
-  position: relative;
-  right: 220px;
-  top: 350px;
-}
-#L5 {
-  position: relative;
-  left: 760px;
-  bottom: 380px;
-}
-#L6 {
-  position: relative;
-  left: 650px;
-  bottom: 250px;
-}
-#L7 {
-  position: relative;
-  left: 750px;
-  bottom: 100px;
-}
-#L8 {
-  position: relative;
-  left: 650px;
-  bottom: -50px;
+button {
+  width: 30px;
+  border: 1px solid;
+  padding-bottom: 3px;
 }

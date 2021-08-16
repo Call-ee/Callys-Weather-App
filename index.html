@@ -23,83 +23,80 @@
       href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
   </head>
-  <body class="body">
-    <div class="app">Check the Weather!</div>
-    <div class="container">
-      <h1>
+  <body>
+    <div
+      class="container d-flex flex-column justify-content-center bg-color box"
+    >
+      <div class="row mt-3">
         <div class="title">City Name</div>
+      </div>
+      <div class="row">
         <div class="time">Time of the day</div>
-      </h1>
-
-      <hr width="85%" />
-      <h2>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon" />
-        <div class="weatherD">Rain</div>
-        <div class="temperature">
-          <span class="tNumber"> 0 </span>
-           <a href="#" id="fahrenheit" class="active"> °F </a>
-          <span class="line"> | </span>
-          <a href="#" id="celsius" > °C </a>
-          <div class="rain">
-            <span class="pre"> Humidity: 0% </span>
-            <br />
-            <span class="wind">Wind: 0km/h</span>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-6 show-weather">
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon" />
+          <div class="weatherD">Rain</div>
+        </div>
+        <div class="col-6 show-weather2">
+          <div class="temperature">
+            <span class="tNumber"> 0 </span>
+            <a href="#" id="fahrenheit" class="active"> °F </a>
+            <span class="line"> | </span>
+            <a href="#" id="celsius"> °C </a>
+            <div class="rain">
+              <span class="pre"> Humidity: 0% </span>
+              <br />
+              <span class="wind">Wind: 0km/h</span>
+            </div>
           </div>
         </div>
-      </h2>
-      <div class="weather-forecast" id="forecast">
+      </div>
+
+      <div class="row">
+        <div class="weather-forecast" id="forecast"></div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col d-flex justify-content-center">
+          <div>
+            <form id="search-form">
+              <input
+                type="text"
+                placeholder="👉 Enter your city! 👈"
+                autofocus="on"
+                autocomplete="off"
+                size="35"
+                id="city"
+              />
+              <input type="submit" value="Search" class="search" />
+            </form>
+          </div>
+          <div>
+            <button>📍</button>
+          </div>
         </div>
       </div>
-      <form id="search-form">
-        <input
-          type="text"
-          placeholder="👉 Enter your city! 👈"
-          autofocus="on"
-          autocomplete="off"
-          size="35"
-          id="city"
-        />
-        <input type="submit" value="Search" class="search" />
-      </form>
-      <button>📍</button>
-    </div>
-    <div class="cally">
-      <a
-        href="https://github.com/Call-ee/Callys-Weather-App"
-        class="git"
-        target="_blank"
-      >
-        Open-source code
-      </a>
-      by Cally Tran
-    </div>
-    <div class="lemon" id="L1">🍋</div>
-    <div class="lemon" id="L2">🍋</div>
-    <div class="lemon" id="L3">🍋</div>
-    <div class="lemon" id="L4">🍋</div>
-    <div class="lemon" id="L5">🍋</div>
-    <div class="lemon" id="L6">🍋</div>
-    <div class="lemon" id="L7">🍋</div>
-    <div class="lemon" id="L8">🍋</div>
-    <div>
-      <ul class="social">
-        <li class="links">
-          <a href="https://www.linkedin.com/in/callytran/" target="_blank">
-            <img src="img/002-linkedin.png" class="socials" width="45px"
-          /></a>
-        </li>
-        <li class="links">
-          <a href="https://github.com/Call-ee" target="_blank">
-            <img src="img/001-github.png" class="socials" width="45px"
-          /></a>
-        </li>
-        <li class="links">
-          <a href="mailto: callytran123@gmail.com" target="_blank">
-            <img src="img/003-emails.png" class="socials" width="45px"
-          /></a>
-        </li>
-      </ul>
+      <div class="row">
+        <div class="cally">
+          <a
+            href="https://github.com/Call-ee/Callys-Weather-App"
+            class="git"
+            target="_blank"
+          >
+            Open-source code
+          </a>
+          by Cally Tran
+        </div>
+      </div>
     </div>
     <script src="Sources/index.js"></script>
   </body>
