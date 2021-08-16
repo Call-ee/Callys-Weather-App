@@ -54,10 +54,16 @@ button {
   width: 30px;
   border: 1px solid;
   padding-bottom: 3px;
+  border-radius: 20px;
+}
+
+button:hover {
+  background: lightgray;
 }
 
 .cally {
   font-family: monospace;
+  font-size: 15px;
 }
 
 .active {
@@ -87,4 +93,14 @@ button {
 
 .line {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+  html {
+    margin-top: 110px;
+  }
+  body {
+    width: 100%;
+    boject-fit: contain;
+  }
 }
