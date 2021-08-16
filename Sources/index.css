@@ -1,6 +1,10 @@
+:root {
+  --main-font: "Port Lligat Sans", sans-serif;
+}
+
 html {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -50,4 +54,37 @@ button {
   width: 30px;
   border: 1px solid;
   padding-bottom: 3px;
+}
+
+.cally {
+  font-family: monospace;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}
+.rain {
+  font-size: 17px;
+}
+
+.weatherD {
+  margin-right: 20px;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.title {
+  color: orangered;
+}
+
+#fahrenheit,
+#celsius {
+  text-decoration: none;
+  color: orangered;
+  font-size: 20px;
+}
+
+.line {
+  font-size: 20px;
 }

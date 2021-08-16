@@ -35,24 +35,39 @@
       class="container d-flex flex-column justify-content-center bg-color box"
     >
       <div class="row mt-3">
-        <div class="title">City Name</div>
+        <div class="title fs-2" style="font-family: var(--main-font)">
+          City Name
+        </div>
       </div>
       <div class="row">
-        <div class="time">Time of the day</div>
+        <div class="time fs-5" style="font-family: var(--main-font)">
+          Time of the day
+        </div>
       </div>
       <hr />
       <div class="row">
         <div class="col-6 show-weather">
           <img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon" />
-          <div class="weatherD">Rain</div>
+          <div class="weatherD" style="font-family: var(--main-font)">Rain</div>
         </div>
         <div class="col-6 show-weather2">
           <div class="temperature">
-            <span class="tNumber"> 0 </span>
-            <a href="#" id="fahrenheit" class="active"> °F </a>
-            <span class="line"> | </span>
-            <a href="#" id="celsius"> °C </a>
-            <div class="rain">
+            <span class="tNumber fs-1" style="font-family: var(--main-font)">
+              0
+            </span>
+            <span class="ms-1">
+              <a
+                href="#"
+                id="fahrenheit"
+                class="active"
+                style="font-family: var(--main-font)"
+              >
+                °F
+              </a>
+              <span class="line"> | </span>
+              <a href="#" id="celsius"> °C </a>
+            </span>
+            <div class="rain" style="font-family: var(--main-font)">
               <span class="pre"> Humidity: 0% </span>
               <br />
               <span class="wind">Wind: 0km/h</span>
@@ -68,7 +83,7 @@
       <div class="row mb-4">
         <div class="col d-flex justify-content-center">
           <div>
-            <form id="search-form">
+            <form id="search-form" style="font-family: var(--main-font)">
               <input
                 type="text"
                 placeholder="👉 Enter your city! 👈"
