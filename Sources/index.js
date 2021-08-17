@@ -49,7 +49,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-          <div class="col-2 fs-5"  style="font-family: var(--main-font)">
+          <div class="col-2 fs-5"  style="font-family: var(--main-font);color: white">
             <img
               src="http://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon

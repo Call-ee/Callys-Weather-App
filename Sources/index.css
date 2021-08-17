@@ -15,7 +15,15 @@ body {
 }
 
 .bg-color {
-  background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  background: radial-gradient(
+    circle at -2.9% 1.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
   border-radius: 20px;
 }
 
@@ -64,6 +72,7 @@ button:hover {
 .cally {
   font-family: monospace;
   font-size: 15px;
+  color: white;
 }
 
 .active {
